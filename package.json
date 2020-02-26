@@ -11,6 +11,9 @@
     "coveralls" : "jest --coverage && cat ./coverage/Icov.info | coveralls",
     "jest-coverage" : "npm run test -- --coverage"
   },
+  "jest":{
+    "collectCoverage" : true
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

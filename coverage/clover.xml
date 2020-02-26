@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1582723681305" clover="3.2.0">
-  <project timestamp="1582723681306" name="All files">
+<coverage generated="1582724386711" clover="3.2.0">
+  <project timestamp="1582724386711" name="All files">
     <metrics statements="43" coveredstatements="17" conditionals="30" coveredconditionals="7" methods="4" coveredmethods="2" elements="77" coveredelements="26" complexity="0" loc="43" ncloc="43" packages="1" files="2" classes="2"/>
     <file name="marks.js" path="E:\Refactory UG\Bootcamp\CI-CD\ci-cd-cricle\models\marks.js">
       <metrics statements="38" coveredstatements="16" conditionals="30" coveredconditionals="7" methods="3" coveredmethods="2"/>
