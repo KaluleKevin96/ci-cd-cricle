@@ -1,5 +1,16 @@
-version: 2.0
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
 jobs:
+   build-and-test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm test
   build:
     environment:
       CC_TEST_REPORTER_ID: 82f49363c293ff65f6bd06f5f77043c453d5318d54853750b0cbad9b68de8d0e
@@ -26,3 +37,7 @@ jobs:
             ./cc-test-reporter before-build
             sudo vendor/bin/phpunit --coverage-clover clover.xml
             ./cc-test-reporter after-build --coverage-input-type clover --exit-code $?
+workflows:
+    build-and-test:
+      jobs:
+        - build-and-test
